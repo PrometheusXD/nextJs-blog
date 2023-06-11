@@ -1,0 +1,122 @@
+{
+  "data": {
+    "setting": {
+      "data": {
+        "id": "1",
+        "attributes": {
+          "blogName": "Matheus Rodrigues",
+          "blogDescription": "ncdsbnci csnb cus cu ybsduc bsdcb isb icbs bcsc lsnc sklcnl nkncl s.",
+          "logo": {
+            "data": null
+          }
+        }
+      }
+    },
+    "posts": {
+      "data": [
+        {
+          "id": "1",
+          "attributes": {
+            "slug": "posnvdjknvj-jcnscn-sinc-ions-ncsn-jcnsmcmko",
+            "title": "posnvdjknvj jcnscn sinc ions ncsn jcnsmcmko ",
+            "excerpt": "cndsicvdsiivcnsdui cnids ncisdb cisbic bsdib cisdbci bsicb sjkcb jksnc nscnsk klkwmcons jocnjias ncjsnc ljsnj cnsjnc sd jlcjsndioic nsdc sjkdcnsonc sn clsnc jsdjvbjajoisn kj njkn jsb jsb.\njcncjksjkcnsk.",
+            "content": "# jciodncodncod",
+            "allowComments": true,
+            "cover": {
+              "data": null
+            },
+            "categories": {
+              "data": [
+                {
+                  "id": "2",
+                  "attributes": {
+                    "displayName": "React",
+                    "slug": "react"
+                  }
+                },
+                {
+                  "id": "1",
+                  "attributes": {
+                    "displayName": "JavaScript",
+                    "slug": "java-script"
+                  }
+                }
+              ]
+            },
+            "tags": {
+              "data": [
+                {
+                  "id": "2",
+                  "attributes": {
+                    "displayName": "useEffect",
+                    "slug": "use-effect"
+                  }
+                },
+                {
+                  "id": "1",
+                  "attributes": {
+                    "displayName": "useState",
+                    "slug": "use-state"
+                  }
+                }
+              ]
+            },
+            "author": {
+              "data": {
+                "id": "1",
+                "attributes": {
+                  "displayName": "Matheus Rodrigues",
+                  "slug": "matheus-rodrigues"
+                }
+              }
+            }
+          }
+        },
+        {
+          "id": "2",
+          "attributes": {
+            "slug": "creating-an-api-with-strapi",
+            "title": "creating an api with strapi",
+            "excerpt": "creating a fucking api with the shit of strapi who everyone love but i hate",
+            "content": "lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum ",
+            "allowComments": false,
+            "cover": {
+              "data": null
+            },
+            "categories": {
+              "data": [
+                {
+                  "id": "3",
+                  "attributes": {
+                    "displayName": "Python",
+                    "slug": "python"
+                  }
+                }
+              ]
+            },
+            "tags": {
+              "data": [
+                {
+                  "id": "1",
+                  "attributes": {
+                    "displayName": "useState",
+                    "slug": "use-state"
+                  }
+                }
+              ]
+            },
+            "author": {
+              "data": {
+                "id": "2",
+                "attributes": {
+                  "displayName": "lucas da silva",
+                  "slug": "lucas-da-silva"
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}
