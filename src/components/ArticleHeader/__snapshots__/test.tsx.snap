@@ -30,6 +30,7 @@ exports[`<ArticleHeader /> should render 1`] = `
 
 .c2 {
   color: #0A1128;
+  line-height: 1.2;
   font-size: 4.0rem;
 }
 
@@ -46,6 +47,7 @@ exports[`<ArticleHeader /> should render 1`] = `
 
 .c3 {
   margin: 2.4rem 0;
+  font-size: 2.4rem;
 }
 
 .c4 {

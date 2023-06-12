@@ -32,7 +32,8 @@ export const Title = styled.h1<
 >`
   ${({ theme, colorDark, size, uppercase }) => css`
     color: ${colorDark ? theme.colors.primary : theme.colors.white};
-    ${!!size && titleSize[size](theme)}
-    ${!!uppercase && titleCase()}
+    line-height: 1.2;
+    ${!!size && titleSize[size](theme)};
+    ${!!uppercase && titleCase()};
   `}
 `;
