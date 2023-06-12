@@ -1,7 +1,6 @@
-import Link from 'next/link';
-import { Heading } from '../Heading';
-
 import * as Styled from './styles';
+import { Heading } from '../Heading';
+import Link from 'next/link';
 
 export type LogoLinkProps = {
   text: string;
@@ -21,25 +20,25 @@ export const LogoLink = ({
 
   if (nextLink) {
     return (
-      <Styled.Container>
-        <Heading size="small" uppercase>
-          <Link href={link} target={target}>
+      <Heading size="small" uppercase>
+        <Link href={link} target={target}>
+          <Styled.Container>
             {!!srcImg && <img src={srcImg} alt={text} />}
             {!srcImg && text}
-          </Link>
-        </Heading>
-      </Styled.Container>
+          </Styled.Container>
+        </Link>
+      </Heading>
     );
   }
 
   return (
-    <Styled.Container>
-      <Heading size="small" uppercase>
-        <a href={link} target={target}>
+    <Heading size="small" uppercase>
+      <a href={link} target={target}>
+        <Styled.Container>
           {!!srcImg && <img src={srcImg} alt={text} />}
           {!srcImg && text}
-        </a>
-      </Heading>
-    </Styled.Container>
+        </Styled.Container>
+      </a>
+    </Heading>
   );
 };

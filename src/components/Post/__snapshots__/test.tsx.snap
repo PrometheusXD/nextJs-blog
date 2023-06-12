@@ -16,7 +16,7 @@ exports[`<Post /> should render 1`] = `
 }
 
 .c6 a {
-  color: #dc143c;
+  color: #f231a5;
   -webkit-text-decoration: none;
   text-decoration: none;
   -webkit-transition: all 300ms ease-in-out;
@@ -69,7 +69,7 @@ exports[`<Post /> should render 1`] = `
 .c8 a,
 .c8 a:visited,
 .c8 a:link {
-  color: #dc143c;
+  color: #f231a5;
   -webkit-text-decoration: none;
   text-decoration: none;
   -webkit-transition: all 300ms ease-in-out;
@@ -83,7 +83,7 @@ exports[`<Post /> should render 1`] = `
 
 .c8 code {
   font-family: monospace;
-  color: #dc143c;
+  color: #f231a5;
   font-size: 1.6rem;
   background: #DDDDDD;
   padding: 0.2rem;
@@ -158,7 +158,7 @@ exports[`<Post /> should render 1`] = `
 }
 
 .c8 blockquote {
-  border-left: 0.5rem solid #dc143c;
+  border-left: 0.5rem solid #f231a5;
   color: #AAAAAA;
   -webkit-filter: brightness(80%);
   filter: brightness(80%);

@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<Header /> should render an image, a heading and text 1`] = `
-.c3 {
+.c2 {
   color: #0A1128;
   line-height: 1.2;
   font-size: 2.4rem;
@@ -14,7 +14,7 @@ exports[`<Header /> should render an image, a heading and text 1`] = `
   font-size: 2.4rem;
 }
 
-.c1 {
+.c3 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -23,15 +23,12 @@ exports[`<Header /> should render an image, a heading and text 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-}
-
-.c1 a {
-  color: inherit;
   -webkit-text-decoration: none;
   text-decoration: none;
+  color: inherit;
 }
 
-.c1 img {
+.c3 > img {
   width: 15rem;
   height: 15rem;
   border-radius: 50%;
@@ -58,7 +55,7 @@ exports[`<Header /> should render an image, a heading and text 1`] = `
   margin: 0 auto;
 }
 
-.c0 .c2 {
+.c0 .c1 {
   margin: 0 0 calc(1.6rem - 1rem);
 }
 
@@ -78,28 +75,28 @@ exports[`<Header /> should render an image, a heading and text 1`] = `
   <header
     class="c0"
   >
-    <div
-      class="c1"
+    <h1
+      class="c1 c2"
     >
-      <h1
-        class="c2 c3"
+      <a
+        href="/"
+        target="_self"
       >
-        <a
-          href="/"
-          target="_self"
+        <div
+          class="c3"
         >
           <img
             alt="Otávio Miranda - Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud."
             src="/assets/images/ana-banana.png"
           />
-        </a>
-      </h1>
-    </div>
+        </div>
+      </a>
+    </h1>
     <div
       class="c4"
     >
       <h2
-        class="c2 c5"
+        class="c1 c5"
       >
         Otávio Miranda
       </h2>

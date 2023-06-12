@@ -21,6 +21,11 @@ export const GlobalStyles = createGlobalStyle`
     font-weight: 800;
     color: ${({ theme }) => theme.colors.primary};
   }
+
+  a {
+    color: ${({ theme }) => theme.colors.secondary};
+    text-decoration: none;
+  }
   /* p {
     margin: ${({ theme }) => theme.spacings.medium} 0;
   }
@@ -28,9 +33,7 @@ export const GlobalStyles = createGlobalStyle`
     margin: ${({ theme }) => theme.spacings.medium};
     padding: ${({ theme }) => theme.spacings.medium};
   }
-  a {
-    color: ${({ theme }) => theme.colors.secondary};
-  }
+
   .table {
     width: 100%;
     overflow-y: auto;

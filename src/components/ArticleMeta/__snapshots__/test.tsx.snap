@@ -16,7 +16,7 @@ exports[`<ArticleMeta /> should render author and category links 1`] = `
 }
 
 .c0 a {
-  color: #dc143c;
+  color: #f231a5;
   -webkit-text-decoration: none;
   text-decoration: none;
   -webkit-transition: all 300ms ease-in-out;

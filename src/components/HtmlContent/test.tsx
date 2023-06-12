@@ -21,7 +21,7 @@ describe('<HtmlContent />', () => {
       .c0 a,
       .c0 a:visited,
       .c0 a:link {
-        color: #dc143c;
+        color: #f231a5;
         -webkit-text-decoration: none;
         text-decoration: none;
         -webkit-transition: all 300ms ease-in-out;
@@ -35,7 +35,7 @@ describe('<HtmlContent />', () => {
 
       .c0 code {
         font-family: monospace;
-        color: #dc143c;
+        color: #f231a5;
         font-size: 1.6rem;
         background: #DDDDDD;
         padding: 0.2rem;
@@ -110,7 +110,7 @@ describe('<HtmlContent />', () => {
       }
 
       .c0 blockquote {
-        border-left: 0.5rem solid #dc143c;
+        border-left: 0.5rem solid #f231a5;
         color: #AAAAAA;
         -webkit-filter: brightness(80%);
         filter: brightness(80%);

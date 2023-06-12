@@ -40,39 +40,31 @@ describe('<MenuLink />', () => {
     expect(container.firstChild).toMatchInlineSnapshot(`
       .c0 {
         display: block;
-        padding-bottom: 1.6rem;
-        font-size: 1.8;
+        color: #FFFFFF;
+        -webkit-text-decoration: none;
+        text-decoration: none;
+        margin-bottom: 1.6rem;
+        font-size: 1.8rem;
         border-right: 0.5rem solid #0A1128;
         -webkit-transition: all 300ms ease-in-out;
         transition: all 300ms ease-in-out;
       }
 
       .c0:hover {
-        border-right: 0.5rem solid #dc143c;
+        border-right: 0.5rem solid #f231a5;
+        color: #f231a5;
       }
 
-      .c0 > a {
-        color: #FFFFFF;
-        -webkit-text-decoration: none;
-        text-decoration: none;
-        -webkit-transition: all 300ms ease-in-out;
-        transition: all 300ms ease-in-out;
-      }
-
-      .c0 > a:hover {
-        color: #dc143c;
-      }
-
-      <div
-        class="c0"
+      <a
+        href="http://localhost"
+        target="_self"
       >
-        <a
-          href="http://localhost"
-          target="_self"
+        <div
+          class="c0"
         >
           Children
-        </a>
-      </div>
+        </div>
+      </a>
     `);
   });
 });
