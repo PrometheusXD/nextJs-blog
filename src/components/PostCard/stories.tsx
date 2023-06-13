@@ -6,6 +6,9 @@ export default {
   title: 'PostCard',
   component: PostCard,
   args: mock,
+  argTypes: {
+    cover: { type: 'symbol' },
+  },
 } as Meta<PostCardProps>;
 
 export const Template: StoryFn<PostCardProps> = (args) => {

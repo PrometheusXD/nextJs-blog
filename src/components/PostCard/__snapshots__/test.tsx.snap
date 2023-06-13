@@ -11,7 +11,6 @@ exports[
 
 .c0 {
   position: relative;
-  box-shadow: 0 0 5px 0px #AAAAAA;
 }
 
 .c0::after,
@@ -28,16 +27,16 @@ exports[
 }
 
 .c0::before {
-  border-left: 2px solid #0A1128;
-  border-right: 2px solid #0A1128;
+  border-left: 2.5px solid #f231a5;
+  border-right: 2.5px solid #f231a5;
   -webkit-transform: scaleY(0);
   -ms-transform: scaleY(0);
   transform: scaleY(0);
 }
 
 .c0::after {
-  border-top: 2px solid #0A1128;
-  border-bottom: 2px solid #0A1128;
+  border-top: 2.5px solid #f231a5;
+  border-bottom: 2.5px solid #f231a5;
   -webkit-transform: scaleX(0);
   -ms-transform: scaleX(0);
   transform: scaleX(0);
@@ -53,6 +52,12 @@ exports[
   -webkit-transform: scaleX(1);
   -ms-transform: scaleX(1);
   transform: scaleX(1);
+}
+
+.c0:hover .c3 {
+  color: #f231a5;
+  -webkit-transition: all 300ms ease-in-out;
+  transition: all 300ms ease-in-out;
 }
 
 .c0 .c3 {

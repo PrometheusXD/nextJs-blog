@@ -4,7 +4,6 @@ import { Title as HeadingStyles } from '../Heading/styles';
 export const Wrapper = styled.div`
   ${({ theme }) => css`
     position: relative;
-    box-shadow: 0 0 5px 0px ${theme.colors.darkerGray};
 
     &::after,
     &::before {
@@ -18,14 +17,14 @@ export const Wrapper = styled.div`
     }
 
     &::before {
-      border-left: 2px solid ${theme.colors.primary};
-      border-right: 2px solid ${theme.colors.primary};
+      border-left: 2.5px solid ${theme.colors.secondary};
+      border-right: 2.5px solid ${theme.colors.secondary};
       transform: scaleY(0);
     }
 
     &::after {
-      border-top: 2px solid ${theme.colors.primary};
-      border-bottom: 2px solid ${theme.colors.primary};
+      border-top: 2.5px solid ${theme.colors.secondary};
+      border-bottom: 2.5px solid ${theme.colors.secondary};
       transform: scaleX(0);
     }
 
@@ -37,6 +36,10 @@ export const Wrapper = styled.div`
       transform: scaleX(1);
     }
 
+    &:hover ${HeadingStyles} {
+      color: ${theme.colors.secondary};
+      transition: all 300ms ease-in-out;
+    }
 
     ${HeadingStyles} {
       margin: 0;
