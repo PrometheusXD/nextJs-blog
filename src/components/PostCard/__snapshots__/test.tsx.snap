@@ -1,0 +1,104 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[
+  `<PostCard /> should render a card with heading, cover and excerpt 1`
+] = `
+.c4 {
+  color: #0A1128;
+  line-height: 1.2;
+  font-size: 2.4rem;
+}
+
+.c0 {
+  position: relative;
+  box-shadow: 0 0 5px 0px #AAAAAA;
+}
+
+.c0::after,
+.c0::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  -webkit-transition: -webkit-transform .3s ease-in-out;
+  -webkit-transition: transform .3s ease-in-out;
+  transition: transform .3s ease-in-out;
+}
+
+.c0::before {
+  border-left: 2px solid #0A1128;
+  border-right: 2px solid #0A1128;
+  -webkit-transform: scaleY(0);
+  -ms-transform: scaleY(0);
+  transform: scaleY(0);
+}
+
+.c0::after {
+  border-top: 2px solid #0A1128;
+  border-bottom: 2px solid #0A1128;
+  -webkit-transform: scaleX(0);
+  -ms-transform: scaleX(0);
+  transform: scaleX(0);
+}
+
+.c0:hover::before {
+  -webkit-transform: scaleY(1);
+  -ms-transform: scaleY(1);
+  transform: scaleY(1);
+}
+
+.c0:hover::after {
+  -webkit-transform: scaleX(1);
+  -ms-transform: scaleX(1);
+  transform: scaleX(1);
+}
+
+.c0 .c3 {
+  margin: 0;
+  margin-bottom: 1.6rem;
+}
+
+.c1 {
+  max-width: 100%;
+}
+
+.c2 {
+  padding: calc(1.6rem - 0.6rem);
+}
+
+.c5 {
+  color: #333333;
+}
+
+<div>
+  <a
+    href="/post/vis-nobis-veritus-maluisset-id-nonumy-adversarium"
+  >
+    <div
+      class="c0"
+    >
+      <img
+        alt="Vis nobis veritus maluisset id, nonumy adversarium"
+        class="c1"
+        src="https://res.cloudinary.com/dlizakp2a/image/upload/v1614698965/Ubuntu_gel_by_Midge_Mantissa_Sinnaeve_7caea7ddb4.jpg"
+      />
+      <div
+        class="c2"
+      >
+        <h2
+          class="c3 c4"
+        >
+          Vis nobis veritus maluisset id, nonumy adversarium
+        </h2>
+        <p
+          class="c5"
+        >
+          Fugit aliquip erroribus eu eam, an mel vidit doctus. Vis nobis veritus maluisset id, nonumy adversarium neglegentur est ut. Tation persius pri eu, modo minim fastidii mei no. Ad tota pertinax definiebas eam.
+        </p>
+      </div>
+    </div>
+  </a>
+</div>
+`;
