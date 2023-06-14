@@ -1,5 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`<PostTags /> should match snapshot with no tags 1`] = `<div />`;
+
 exports[`<PostTags /> should render two tags 1`] = `
 .c0 {
   margin: 2.4rem 0;
