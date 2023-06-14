@@ -26,3 +26,27 @@ export const Template: StoryFn<ArticleMetaProps> = (args) => {
     </div>
   );
 };
+
+export const NoCategories: StoryFn<ArticleMetaProps> = (args) => {
+  return (
+    <div>
+      <ArticleMeta {...args} categories={undefined} />
+    </div>
+  );
+};
+
+export const NoAuthors: StoryFn<ArticleMetaProps> = (args) => {
+  return (
+    <div>
+      <ArticleMeta {...args} author={undefined} />
+    </div>
+  );
+};
+
+export const NoAuthorsAndCategories: StoryFn<ArticleMetaProps> = (args) => {
+  return (
+    <div>
+      <ArticleMeta {...args} author={undefined} categories={undefined} />
+    </div>
+  );
+};

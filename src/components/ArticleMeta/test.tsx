@@ -33,4 +33,12 @@ describe('<ArticleMeta />', () => {
       props.createdAt,
     );
   });
+
+  it('should match snapshot with no authors and categories', () => {
+    const { container } = renderTheme(
+      <ArticleMeta {...props} author={undefined} categories={undefined} />,
+    );
+
+    expect(container).toMatchSnapshot();
+  });
 });
