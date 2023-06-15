@@ -1,12 +1,44 @@
-import { useEffect } from 'react';
-import { loadPosts } from '../api/load-posts';
+import Head from 'next/head';
+import { StrapiPostAndSettings, loadPosts } from '../api/load-posts';
+import { GetStaticProps } from 'next';
+import { PostsTemplate } from '../templates/PostsTemplate';
 
-export default function Index() {
-  useEffect(() => {
-    loadPosts({
-      authorSlug: 'lucas-da-silva',
-    }).then((r) => console.log(r));
-  }, []);
+export default function Index({ posts, setting }: StrapiPostAndSettings) {
+  return (
+    <>
+      <Head>
+        <title>
+          {setting.blogName} - {setting.blogDescription}
+        </title>
+        <meta name="description" content={setting.blogDescription} />
+      </Head>
 
-  return <h1>bla</h1>;
+      <PostsTemplate posts={posts} settings={setting} />
+    </>
+  );
 }
+
+export const getStaticProps: GetStaticProps<
+  StrapiPostAndSettings
+> = async () => {
+  let data = null;
+
+  try {
+    data = await loadPosts();
+  } catch (e) {
+    data = null;
+  }
+
+  if (!data || !data.posts || !data.posts.length) {
+    return {
+      notFound: true,
+    };
+  }
+
+  return {
+    props: {
+      posts: data.posts,
+      setting: data.setting,
+    },
+  };
+};

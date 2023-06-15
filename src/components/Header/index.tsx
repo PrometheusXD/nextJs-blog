@@ -17,11 +17,13 @@ export const Header = ({
 }: HeaderProps) => {
   return (
     <Styled.Wrapper>
-      <LogoLink
-        link="/"
-        text={`${blogName} - ${blogDescription}`}
-        srcImg={logo}
-      />
+      {!!logo && (
+        <LogoLink
+          link="/"
+          text={`${blogName} - ${blogDescription}`}
+          srcImg={logo}
+        />
+      )}
 
       {!!showText && (
         <Styled.Content>
