@@ -69,6 +69,24 @@ exports[`<Header /> should render an image, a heading and text 1`] = `
   max-width: 48rem;
 }
 
+@media (max-width:360px) {
+  .c0 {
+    -webkit-flex-flow: column wrap;
+    -ms-flex-flow: column wrap;
+    flex-flow: column wrap;
+  }
+
+  .c0 > .c1 {
+    margin-bottom: 2.4rem;
+  }
+}
+
+@media (max-width:360px) {
+  .c4 {
+    margin-left: 0;
+  }
+}
+
 <div>
   <header
     class="c0"
