@@ -1,6 +1,6 @@
 import { request } from 'graphql-request';
-import config from '../config';
 import { GRAPGHQL_QUERY } from '../graphql/queries';
+import config from '../config';
 
 export type LoadPostsVariables = {
   categorySlug?: string;
