@@ -1,3 +1,5 @@
+import { BaseProps } from '.';
+
 export default {
   settings: {
     id: '603e6c0fea5cb78a6ea187f2',
@@ -25,4 +27,4 @@ export default {
     text: '<p>O texto da footer</p>',
   },
   children: 'Olá mundo',
-};
+} as BaseProps;
