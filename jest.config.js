@@ -13,10 +13,7 @@ module.exports = {
   ],
 
   testEnvironment: 'jsdom',
-  testMatch: [
-    '<rootDir>/**/__tests__/**/*.[jt]s?(x)',
-    '<rootDir>/**/?(*.)+(spec|test).[tj]s?(x)',
-  ],
+  testMatch: ['**/__tests__/**/*.[jt]s?(x)', '**/?(*.)+(spec|test).[tj]s?(x)'],
   testPathIgnorePatterns: ['/node_modules/', '/.next/', '/.out/', '/public/'],
 
   setupFilesAfterEnv: ['<rootDir>/.jest/setup-tests.js'],
