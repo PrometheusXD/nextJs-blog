@@ -6,8 +6,8 @@ export const Container = styled.div`
   color: inherit;
 
   > img {
-    width: 15rem;
-    height: 15rem;
+    width: 14rem;
+    height: 14rem;
     border-radius: 50%;
   }
 `;

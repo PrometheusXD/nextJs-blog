@@ -27,8 +27,8 @@ exports[`<Header /> should render an image, a heading and text 1`] = `
 }
 
 .c3 > img {
-  width: 15rem;
-  height: 15rem;
+  width: 14rem;
+  height: 14rem;
   border-radius: 50%;
 }
 

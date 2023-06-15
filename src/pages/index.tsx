@@ -7,9 +7,7 @@ export default function Index({ posts, setting }: StrapiPostAndSettings) {
   return (
     <>
       <Head>
-        <title>
-          {setting.blogName} - {setting.blogDescription}
-        </title>
+        <title>{`${setting.blogName} - ${setting.blogDescription}`}</title>
         <meta name="description" content={setting.blogDescription} />
       </Head>
 
@@ -40,5 +38,7 @@ export const getStaticProps: GetStaticProps<
       posts: data.posts,
       setting: data.setting,
     },
+
+    revalidate: 24 * 60 * 60,
   };
 };

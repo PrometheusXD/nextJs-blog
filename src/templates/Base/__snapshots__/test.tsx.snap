@@ -178,8 +178,8 @@ exports[`<Base /> should render base elements 1`] = `
 }
 
 .c7 > img {
-  width: 15rem;
-  height: 15rem;
+  width: 14rem;
+  height: 14rem;
   border-radius: 50%;
 }
 
