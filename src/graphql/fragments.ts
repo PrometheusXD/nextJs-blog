@@ -65,17 +65,25 @@ export const GRAPGHQL_FRAGMENTS = gql`
   }
 
   fragment settings on Setting {
-    blogName
-    blogDescription
-    logo {
-      data {
-        id
-        attributes {
-          ...image
-        }
+  blogName
+  blogDescription
+  menuLink {
+    id
+    link
+    text
+    newTab
+  }
+  logo {
+    data {
+      id
+      attributes {
+        ...image
       }
     }
   }
+  text
+  }
+
 
   fragment post on Post {
     slug

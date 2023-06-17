@@ -42,6 +42,7 @@ exports[
       </time>
     </p>
   </div>
+  ;
 </div>
 `;
 
@@ -121,5 +122,6 @@ exports[`<ArticleMeta /> should render author and category links 1`] = `
       </span>
     </p>
   </div>
+  ;
 </div>
 `;

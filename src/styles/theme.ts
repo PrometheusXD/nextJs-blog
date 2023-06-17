@@ -1,4 +1,5 @@
 export const theme = {
+  name: 'default',
   colors: {
     primary: '#0A1128',
     darkText: '#333333',
@@ -40,4 +41,4 @@ export const theme = {
     max: '96rem',
     content: '80rem',
   },
-} as const;
+};

@@ -121,5 +121,6 @@ exports[`<Header /> should render an image, a heading and text 1`] = `
       </p>
     </div>
   </header>
+  ;
 </div>
 `;

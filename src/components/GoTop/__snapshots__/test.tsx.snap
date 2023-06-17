@@ -50,5 +50,6 @@ exports[`<GoTop /> should render a go to top button 1`] = `
       />
     </svg>
   </a>
+  ;
 </div>
 `;

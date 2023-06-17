@@ -1,6 +1,10 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`<PostTags /> should match snapshot with no tags 1`] = `<div />`;
+exports[`<PostTags /> should match snapshot with no tags 1`] = `
+<div>
+  ;
+</div>
+`;
 
 exports[`<PostTags /> should render two tags 1`] = `
 .c0 {
@@ -53,5 +57,6 @@ exports[`<PostTags /> should render two tags 1`] = `
       </a>
     </span>
   </p>
+  ;
 </div>
 `;

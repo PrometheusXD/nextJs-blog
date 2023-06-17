@@ -123,5 +123,6 @@ exports[`<ArticleHeader /> should render 1`] = `
       </p>
     </div>
   </header>
+  ;
 </div>
 `;
