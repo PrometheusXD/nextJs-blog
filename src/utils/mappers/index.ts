@@ -38,6 +38,7 @@ export const mapPosts = (posts): PostStrapi[] => {
         title: post.attributes.title,
         excerpt: post.attributes.excerpt,
         content: post.attributes.content,
+        allowComments: post.attributes.allowComments,
         cover:
           {
             id: post.attributes.cover.data?.id || null,
