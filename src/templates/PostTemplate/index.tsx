@@ -8,6 +8,7 @@ import * as Styled from './styles';
 
 export type PostTemplateProps = {
   settings: SettingsStrapi;
+
   post: PostStrapi;
 };
 
