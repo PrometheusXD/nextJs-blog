@@ -24,6 +24,15 @@ exports[`<GoTop /> should render a go to top button 1`] = `
   z-index: 6;
 }
 
+.c0 > svg {
+  -webkit-transition: all 300ms ease-in-out;
+  transition: all 300ms ease-in-out;
+}
+
+.c0 > svg:hover {
+  color: #f231a5;
+}
+
 .c1 {
   display: inline-block;
   vertical-align: middle;
@@ -50,6 +59,5 @@ exports[`<GoTop /> should render a go to top button 1`] = `
       />
     </svg>
   </a>
-  ;
 </div>
 `;

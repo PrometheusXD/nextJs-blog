@@ -4,6 +4,8 @@ import { GoTop } from '../../components/GoTop';
 import { Header } from '../../components/Header';
 import { Menu } from '../../components/Menu';
 import { SettingsStrapi } from '../../shared-types/settings-strapi';
+import { ToggleTheme } from '../../components/ToggleTheme';
+
 import * as Styled from './styles';
 
 export type BaseProps = {
@@ -16,6 +18,8 @@ export const Base = ({ settings, children }: BaseProps) => {
 
   return (
     <Styled.Wrapper>
+      <ToggleTheme />
+
       <Menu
         links={settings.menuLink}
         blogName={settings.blogName}
@@ -36,7 +40,7 @@ export const Base = ({ settings, children }: BaseProps) => {
             type="search"
             placeholder="Encontre posts"
             name="q"
-            defaultValue={router.query.q}
+            defaultValue={router?.query?.q || ''}
           />
         </form>
       </Styled.SearchContainer>

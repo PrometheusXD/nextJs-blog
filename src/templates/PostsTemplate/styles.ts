@@ -16,9 +16,18 @@ export const Button = styled.button`
     border: none;
     padding: ${theme.spacings.small} ${theme.spacings.large};
     cursor: pointer;
+    transition: all 300ms ease-in-out;
 
-    &:disabled {
-    background: ${theme.colors.darkerGray};
+
+    &:disabled,
+    &:disabled:hover {
+      background: ${theme.colors.darkerGray};
+      color: #FFFFFF;
+    }
+
+    &:hover {
+      background: ${theme.colors.secondary};
+      color: #FFFFFF;
     }
   `}
 `;

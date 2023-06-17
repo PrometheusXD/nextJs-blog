@@ -667,6 +667,5 @@ const useMyHook = (cb, delay = 1000) =&gt; {
       </div>
     </div>
   </article>
-  ;
 </div>
 `;

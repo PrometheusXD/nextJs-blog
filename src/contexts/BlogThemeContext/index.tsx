@@ -1,5 +1,5 @@
 import { DefaultTheme, ThemeProvider } from 'styled-components';
-import { createContext, useEffect, useState } from 'react';
+import { createContext, useCallback, useEffect, useState } from 'react';
 import { theme } from '../../styles/theme';
 
 export type BlogThemeProviderProps = {
@@ -25,36 +25,37 @@ export const BlogThemeProvider = ({ children }: BlogThemeProviderProps) => {
     setBlogTheme(newTheme);
   }, []);
 
-  const handleSetTheme: BlogThemeContextValues['setTheme'] = (
-    mode = 'default',
-  ) => {
-    if (mode === 'default') {
-      setBlogTheme(theme);
-      localStorage.setItem('theme', JSON.stringify(theme));
-    } else {
-      const newTheme = {
-        ...theme,
-        name: 'inverted',
-        colors: {
-          primary: '#FFFFFF',
-          darkText: '#F9F9F9',
-          secondary: '#f231a5',
-          white: '#0A1128',
-          mediumGray: '#F9F9F9',
-          darkerGray: '#CCCCCC',
-        },
-      };
+  const handleSetTheme: BlogThemeContextValues['setTheme'] = useCallback(
+    (mode = 'default') => {
+      if (mode === 'default') {
+        setBlogTheme(theme);
+        localStorage.setItem('theme', JSON.stringify(theme));
+      } else {
+        const newTheme = {
+          ...theme,
+          name: 'inverted',
+          colors: {
+            primary: '#FFFFFF',
+            darkText: '#F9F9F9',
+            secondary: '#f231a5',
+            white: '#0A1128',
+            mediumGray: '#F9F9F9',
+            darkerGray: '#CCCCCC',
+          },
+        };
 
-      setBlogTheme(newTheme);
-      localStorage.setItem('theme', JSON.stringify(newTheme));
-    }
-  };
+        setBlogTheme(newTheme);
+        localStorage.setItem('theme', JSON.stringify(newTheme));
+      }
+    },
+    [],
+  );
 
   return (
     <BlogThemeContext.Provider
       value={{ theme: blogTheme, setTheme: handleSetTheme }}
     >
-      <ThemeProvider theme={blogTheme}>{children}</ThemeProvider>;
+      <ThemeProvider theme={blogTheme}>{children}</ThemeProvider>
     </BlogThemeContext.Provider>
   );
 };

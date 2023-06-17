@@ -147,6 +147,5 @@ exports[`<Footer /> should render 1`] = `
       </h1>
     </div>
   </footer>
-  ;
 </div>
 `;

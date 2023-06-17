@@ -279,6 +279,5 @@ exports[`<Menu /> should open/close menu on button click 1`] = `
       </a>
     </nav>
   </div>
-  ;
 </div>
 `;

@@ -13,5 +13,13 @@ export const Container = styled.a`
     bottom: 2rem;
     right: 2rem;
     z-index: 6;
+
+    > svg {
+    transition: all 300ms ease-in-out;
+    }
+
+    > svg:hover {
+      color: ${theme.colors.secondary};
+    }
   `}
 `;

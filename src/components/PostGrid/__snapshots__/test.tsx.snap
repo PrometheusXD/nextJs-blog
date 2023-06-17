@@ -184,6 +184,5 @@ exports[`<PostGrid /> should match snapshot 1`] = `
       </a>
     </div>
   </div>
-  ;
 </div>
 `;
