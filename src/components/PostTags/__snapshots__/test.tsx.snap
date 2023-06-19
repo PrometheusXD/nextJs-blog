@@ -4,7 +4,9 @@ exports[`<PostTags /> should match snapshot with no tags 1`] = `<div />`;
 
 exports[`<PostTags /> should render two tags 1`] = `
 .c0 {
-  margin: 2.4rem 0;
+  margin: 2.4rem auto;
+  padding: 0 3.2rem;
+  max-width: 80rem;
 }
 
 .c0 span {
