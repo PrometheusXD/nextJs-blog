@@ -43,7 +43,7 @@ describe('<HtmlContent />', () => {
       }
 
       .c0 pre {
-        background: #0A1128;
+        background: #030518;
         padding: 2.4rem;
         font-family: monospace;
         color: #FFFFFF;

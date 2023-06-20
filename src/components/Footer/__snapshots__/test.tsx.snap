@@ -47,7 +47,7 @@ exports[`<Footer /> should render 1`] = `
 }
 
 .c1 pre {
-  background: #0A1128;
+  background: #030518;
   padding: 2.4rem;
   font-family: monospace;
   color: #FFFFFF;
