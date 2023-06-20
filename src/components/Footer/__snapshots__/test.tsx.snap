@@ -12,19 +12,136 @@ exports[`<Footer /> should render 1`] = `
   text-decoration: none;
 }
 
-.c1 {
+.c1 code[class*="language-"],
+.c1 pre[class*="language-"] {
+  color: #f8f8f2;
+  background: none;
+  text-shadow: 0 1px rgba(0,0,0,0.3);
+  font-family: Consolas,Monaco,'Andale Mono','Ubuntu Mono',monospace;
+  text-align: left;
+  white-space: pre;
+  word-spacing: normal;
+  word-break: normal;
+  word-wrap: normal;
+  line-height: 1.5;
+  -moz-tab-size: 4;
+  -o-tab-size: 4;
+  tab-size: 4;
+  -webkit-hyphens: none;
+  -moz-hyphens: none;
+  -ms-hyphens: none;
+  -webkit-hyphens: none;
+  -moz-hyphens: none;
+  -ms-hyphens: none;
+  hyphens: none;
+}
+
+.c1 pre[class*="language-"] {
+  padding: 1em;
+  margin: .5em 0;
+  overflow: auto;
+  border-radius: 0.3em;
+}
+
+.c1:not(pre) > code[class*="language-"],
+.c1 pre[class*="language-"] {
+  background: #282a36;
+}
+
+.c1:not(pre) > code[class*="language-"] {
+  padding: .1em;
+  border-radius: .3em;
+  white-space: normal;
+}
+
+.c1 .token.comment,
+.c1 .token.prolog,
+.c1 .token.doctype,
+.c1 .token.cdata {
+  color: #6272a4;
+}
+
+.c1 .token.punctuation {
+  color: #f8f8f2;
+}
+
+.c1 .namespace {
+  opacity: .7;
+}
+
+.c1 .token.property,
+.c1 .token.tag,
+.c1 .token.constant,
+.c1 .token.symbol,
+.c1 .token.deleted {
+  color: #ff79c6;
+}
+
+.c1 .token.boolean,
+.c1 .token.number {
+  color: #bd93f9;
+}
+
+.c1 .token.selector,
+.c1 .token.attr-name,
+.c1 .token.string,
+.c1 .token.char,
+.c1 .token.builtin,
+.c1 .token.inserted {
+  color: #50fa7b;
+}
+
+.c1 .token.operator,
+.c1 .token.entity,
+.c1 .token.url,
+.c1 .language-css .token.string,
+.c1 .style .token.string,
+.c1 .token.variable {
+  color: #f8f8f2;
+}
+
+.c1 .token.atrule,
+.c1 .token.attr-value,
+.c1 .token.function,
+.c1 .token.class-name {
+  color: #f1fa8c;
+}
+
+.c1 .token.keyword {
+  color: #8be9fd;
+}
+
+.c1 .token.regex,
+.c1 .token.important {
+  color: #ffb86c;
+}
+
+.c1 .token.important,
+.c1 .token.bold {
+  font-weight: bold;
+}
+
+.c1 .token.italic {
+  font-style: italic;
+}
+
+.c1 .token.entity {
+  cursor: help;
+}
+
+.c2 {
   font-size: calc(1.6rem + 0.2rem);
   line-height: 1.5;
 }
 
-.c1 p {
+.c2 p {
   margin: 2.4rem 0;
   font-size: 2.4rem;
 }
 
-.c1 a,
-.c1 a:visited,
-.c1 a:link {
+.c2 a,
+.c2 a:visited,
+.c2 a:link {
   color: #f231a5;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -32,88 +149,63 @@ exports[`<Footer /> should render 1`] = `
   transition: all 300ms ease-in-out;
 }
 
-.c1 a:hover {
+.c2 a:hover {
   -webkit-filter: brightness(50%);
   filter: brightness(50%);
 }
 
-.c1 code {
-  font-family: monospace;
-  color: #f231a5;
-  font-size: 1.6rem;
-  background: #DDDDDD;
-  padding: 0.2rem;
-  margin: 0.2rem;
-}
-
-.c1 pre {
-  background: #030518;
-  padding: 2.4rem;
-  font-family: monospace;
-  color: #FFFFFF;
-  margin: 2.4rem 0;
-  width: 100%;
-  overflow-x: auto;
-  font-size: 1.6rem;
-}
-
-.c1 pre code {
-  color: inherit;
-  background: inherit;
-}
-
-.c1 img {
+.c2 img {
   max-width: 100%;
 }
 
-.c1 .image {
+.c2 .image {
   background: #DDDDDD;
   line-height: 0;
   margin: 2.4rem 0;
 }
 
-.c1 .image figcaption {
+.c2 .image figcaption {
   font-size: 1.6rem;
   padding: 1.6rem;
   text-align: center;
   line-height: 1.3;
 }
 
-.c1 .image-style-side {
+.c2 .image-style-side {
   float: right;
   max-width: 50%;
   margin: 2.4rem;
 }
 
-.c1 hr {
+.c2 hr {
   border: none;
   border-bottom: 0.1rem solid #DDDDDD;
 }
 
-.c1 ul,
-.c1 ol {
+.c2 ul,
+.c2 ol {
   margin: 2.4rem 3.2rem;
 }
 
-.c1 .table {
+.c2 .table {
   width: 100%;
   overflow: hidden;
   overflow-x: auto;
 }
 
-.c1 table {
+.c2 table {
   width: 100%;
   border-collapse: collapse;
   margin: 2.4rem 0;
 }
 
-.c1 table td,
-.c1 table th {
+.c2 table td,
+.c2 table th {
   padding: 1.6rem;
   border: 0.1rem solid #DDDDDD;
 }
 
-.c1 blockquote {
+.c2 blockquote {
   border-left: 0.5rem solid #f231a5;
   color: #AAAAAA;
   -webkit-filter: brightness(80%);
@@ -124,11 +216,11 @@ exports[`<Footer /> should render 1`] = `
 }
 
 @media (max-width:768px) {
-  .c1 {
+  .c2 {
     font-size: 1.8rem;
   }
 
-  .c1 .image-style-side {
+  .c2 .image-style-side {
     float: none;
     max-width: 100%;
     margin: 0;
@@ -142,9 +234,13 @@ exports[`<Footer /> should render 1`] = `
     <div
       class="c1"
     >
-      <h1>
-        olá
-      </h1>
+      <div
+        class="c2"
+      >
+        <h1>
+          olá
+        </h1>
+      </div>
     </div>
   </footer>
 </div>

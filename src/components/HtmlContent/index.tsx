@@ -1,3 +1,7 @@
+import { useEffect } from 'react';
+import Prism from 'prismjs';
+import { PrismWrapper } from './prism-vscode-dark';
+
 import * as Styled from './styles';
 
 export type HtmlContentProps = {
@@ -5,5 +9,15 @@ export type HtmlContentProps = {
 };
 
 export const HtmlContent = ({ html }: HtmlContentProps) => {
-  return <Styled.Container dangerouslySetInnerHTML={{ __html: html }} />;
+  useEffect(() => {
+    if (typeof window !== 'undefined') {
+      Prism.highlightAll();
+    }
+  }, []);
+
+  return (
+    <PrismWrapper>
+      <Styled.Container dangerouslySetInnerHTML={{ __html: html }} />
+    </PrismWrapper>
+  );
 };
